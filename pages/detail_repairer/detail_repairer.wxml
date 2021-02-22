@@ -1,0 +1,51 @@
+<view id='tabs'>
+  <view class='tabs-box'>
+    <block wx:for="{{top}}" wx:key="index">
+      <view class="tabs-item {{currentTabIndex == index ? 'selected' : '' }}" bindtap='onTabsItemTap' data-index='{{index}}'>
+        {{item}}      
+      </view>
+    </block> 
+  </view>
+  <view class='ordert-detail'>
+    <view hidden='{{currentTabIndex != 0}}'>
+      <i-button bindtap="toadd">增加报修</i-button>
+      <view wx:for="{{list}}" wx:key="list" class="pages" data-index="{{index}}" data-id="{{item.id_pages}}" bindtap="click"><view>
+        <view>第 {{index+1}} 单：</view>
+        <view>申请人：{{item.name_pages}}</view>
+        <view class="grade">紧急程度：{{item.grade_pages}}</view>
+        <view>故障地点：{{item.addr_pages}}</view>
+        <view>问题描述：{{item.detail_pages}}</view>
+        <view class="time">报修时间：{{item.now_pages}}</view>
+      </view>
+      <view><i-button type="primary" size="small" shape="circle" class="btn">查看详情</i-button></view>
+      </view>
+    </view>
+    <view hidden='{{currentTabIndex != 1}}'>
+      <view wx:for="{{list2}}" wx:key="list2" class="pages2" data-index="{{index}}" data-id="{{item.id_pages}}" bindtap="click">
+        <view>第 {{index+1}} 单：</view>
+        <view>申请人：{{item.name_pages}}</view>
+        <view class="grade">紧急程度：{{item.grade_pages}}</view>
+        <view>故障地点：{{item.addr_pages}}</view>
+        <view>问题描述：{{item.detail_pages}}</view>
+        <view>维修师傅：{{item.name_maintainer}}</view>
+        <view>维修师傅联系方式：{{item.phone_maintainer}}</view>
+        <view class="time">报修时间：{{item.now_pages}}</view>
+        <view class="time2">被接时间：{{item.add_maintainer}}</view>
+      </view>
+    </view>
+    <view hidden='{{currentTabIndex != 2}}'>
+      <view wx:for="{{list3}}" wx:key="list3" class="pages2" data-index="{{index}}" data-id="{{item.id_pages}}" bindtap="click">
+        <view>第 {{index+1}} 单：</view>
+        <view>申请人：{{item.name_repairer}}</view>
+        <view class="grade">紧急程度：{{item.grade_pages}}</view>
+        <view>故障地点：{{item.addr_pages}}</view>
+        <view>问题描述：{{item.detail_pages}}</view>
+        <view>维修师傅：{{item.name_maintainer}}</view>
+        <view>维修师傅联系方式：{{item.phone_maintainer}}</view>
+        <view class="time">报修时间：{{item.now_pages}}</view>
+        <view class="time2">被接时间：{{item.add_maintainer}}</view>
+        <view class="time2">完成时间：{{item.finish_maintainer}}</view>   
+      </view>
+    </view>
+  </view>
+</view>

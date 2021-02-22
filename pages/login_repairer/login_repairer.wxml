@@ -1,0 +1,14 @@
+<!--pages/login_repairer/login_repairer.wxml-->
+<image bindtap="detail" class="detail" src='../../images/detail.png'></image>
+<view>
+  <form bindsubmit="login">
+<view class="image">
+  <image src='../../images/repairer.png'></image>
+</view>
+<i-panel class="input">
+    <i-input title="学号" value="{{no_repairer}}" type="number" mode="wrapped" name="no_repairer" autofocus placeholder="请输入学号" maxlength="15" />
+    <i-input title="密码" value="{{pass_repairer}}" type="password" mode="wrapped" name="pass_repairer" placeholder="请输入密码" maxlength="15" />
+</i-panel>
+<button class="btn" form-type="submit">登录</button>
+</form>
+</view>

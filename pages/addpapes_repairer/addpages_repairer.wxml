@@ -1,0 +1,21 @@
+<!--pages/addpapes_repairer/addpages_repairer.wxml-->
+<view class="page">
+<form bindsubmit="formSubmit">
+<i-panel>
+  <i-input i-class="i-input" title="请认真填写报修单："  disabled />
+  <i-input title="报修单编号：" value="{{id_pages}}" type="number" mode="wrapped" name="id_pages"  disabled />
+  <i-input title="报修单时间：" value="{{now_pages}}" type="text" mode="wrapped" name="now_pages" disabled />
+  <i-input title="报修人姓名：" value="{{name_pages}}" type="text" mode="wrapped" name="name_pages" disabled />
+  <i-input title="报修人学号：" value="{{no_pages}}" type="text" mode="wrapped" name="no_pages" disabled />
+  <i-input title="报修人手机：" value="{{phone_pages}}" type="text" mode="wrapped" name="phone_pages"  disabled  />
+  <i-input title="故障的地点：" value="{{addr_pages}}" type="text" mode="wrapped" name="addr_pages" placeholder="如：大家乐302" maxlength="15" />
+  <i-input title="故障的描述：" value="{{detail_pages}}" type="text" mode="wrapped" name="detail_pages" placeholder="如：门坏了" maxlength="15" />
+  <i-input title="故障的程度：" value="{{grade_pages}}" type="text" mode="wrapped" name="grade_pages" placeholder="如：紧急、急、一般" maxlength="30" />
+  <i-input title="维修时间段：" value="{{time_pages}}" type="text" mode="wrapped" name="time_pages" placeholder="如：19日早上9点" maxlength="30" />
+  <!-- <i-input title="故障的图片：" value="{{img_pages}}"  mode="wrapped" name="img_pages" placeholder="点击上传"  bindtap="chooseImg" />
+  <view><image mode="heightFix" src='{{img_l}}' bindtap='preview_img'></image></view>
+  <i-input i-class="i-up" title="确认上传" bindtap='up_img'  disabled /> -->
+</i-panel>
+<button class="btn" formType="submit">报修</button>
+</form>
+</view>

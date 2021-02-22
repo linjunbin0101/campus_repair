@@ -1,0 +1,59 @@
+<view class="title">维修者操作流程</view>
+<i-steps current="{{verticalCurrent}}" direction="vertical" i-class="i-detail">
+    <i-step>
+        <view slot="title">
+             登陆
+         </view>
+        <view slot="content">
+            在登陆界面，账号是工号，初始密码是“123456”
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            关于我的
+        </view>
+        <view slot="content">
+            “关于我的”有5个模块，可以进行不同功能
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            报修大厅
+        </view>
+        <view slot="content">
+            “报修大厅”可以看到所有报修单，可以查看并接单
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            维修情况
+        </view>
+        <view slot="content">
+            点击“查看我的维修情况”可以查看所接维修单内容
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            维修中
+        </view>
+        <view slot="content">
+            “维修中”是所接的所有接单，正处于待维修中
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            已完成
+        </view>
+        <view slot="content">
+            “已完成”是已经维修完成的单
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title" status="finish" icon="barrage">
+            感谢您的使用！
+        </view>
+        <view slot="content">
+            有问题联系微信“iyyulu”
+        </view>
+    </i-step>
+</i-steps>

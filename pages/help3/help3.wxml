@@ -1,0 +1,43 @@
+<view class="title">管理人员操作流程</view>
+<i-steps current="{{verticalCurrent}}" direction="vertical" i-class="i-detail">
+    <i-step>
+        <view slot="title">
+             登陆
+         </view>
+        <view slot="content">
+            在登陆界面，账号是工号，初始密码是“123456”
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            管理员界面
+        </view>
+        <view slot="content">
+         在顶部有5个Tabs，可以进行不同操作
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            报修人员、维修人员
+        </view>
+        <view slot="content">
+            可以查看和删除相关人员名单
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title">
+            新报修、维修中、已完成
+        </view>
+        <view slot="content">
+            可以对所有状态的订单进行管理，根据情况处理
+        </view>
+    </i-step>
+    <i-step>
+        <view slot="title" status="finish" icon="barrage">
+            感谢您的使用！
+        </view>
+        <view slot="content">
+            有问题联系微信“iyyulu”
+        </view>
+    </i-step>
+</i-steps>

@@ -1,0 +1,23 @@
+/* pages/login_repairer/login_repairer.wxss */
+.image{
+   display:flex;  
+   justify-content: center; 
+   margin-bottom: 10%;
+ }
+ .image image{
+   width: 400rpx;
+   height: 400rpx;
+ }
+ .btn{
+  margin-top: 40px;
+  width: 40%;
+  background: -webkit-linear-gradient(left,pink,lightblue,skyblue);
+  color: white;
+  border-radius: 98rpx;
+}
+.detail{
+  width: 40px;
+  height: 40px;
+  margin-top: 20%;
+  padding-left: 320px;
+}

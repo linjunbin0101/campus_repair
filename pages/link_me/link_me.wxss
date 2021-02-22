@@ -1,0 +1,12 @@
+/* pages/link_me/link_me.wxss */
+.page{
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.txt{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}

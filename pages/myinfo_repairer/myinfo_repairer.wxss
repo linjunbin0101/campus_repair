@@ -1,0 +1,19 @@
+/* pages/myinfo_repairer/myinfo_repairer.wxss */
+.i-page{
+  margin-top: 5% !important;
+}
+.pic {
+	overflow:hidden; 
+	border-radius: 50%;
+	width: 130rpx;
+	height: 130rpx;
+  margin: 15% 40%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.btn{
+  margin-top: 40px;
+  width: 40%;
+  background: -webkit-linear-gradient(left,pink,lightblue,skyblue);
+  color: white;
+  border-radius: 98rpx;
+}

@@ -1,0 +1,13 @@
+<view class="pages">
+<image bindtap="ad" class="img" src="/images/ad.png"></image>
+</view>
+
+<view class='p_type1'>
+    <image bindtap="input1" src='../../images/repairer.png'></image>
+</view>
+<text class='type_text'>我是报修员</text>
+
+<view class='p_type2'>
+    <image bindtap="input2" src='../../images/maintainer.png'></image>
+</view>
+<text class='type_text'>我是维修员</text>

@@ -1,0 +1,12 @@
+<!--pages/myinfo_maintainer/myinfo_maintainer.wxml-->
+<form bindsubmit="formSubmit">
+<i-panel i-class="i-page">
+  <view class="pic"><open-data type="userAvatarUrl"></open-data></view>
+  <i-input title="性别：" value="{{list.sex_maintainer}}" type="text" mode="wrapped" name="sex_maintainer"  disabled />
+  <i-input title="姓名：" value="{{list.name_maintainer}}" type="number" mode="wrapped" name="name_maintainer"  disabled />
+  <i-input title="学号：" value="{{no_maintainer}}" type="text" mode="wrapped" name="no_maintainer"  disabled />
+  <i-input title="账户密码：" value="{{list.pass_maintainer}}" type="text" mode="wrapped" name="pass_maintainer"  disabled />
+  <i-input title="联系方式：" value="{{list.phone_maintainer}}" type="text" mode="wrapped" name="phone_maintainer"  disabled />
+  <button class="btn" form-type="submit">修改信息</button>
+</i-panel>
+</form>

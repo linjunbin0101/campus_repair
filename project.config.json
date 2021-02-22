@@ -1,0 +1,90 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.15.0",
+  "appid": "wxf4d40715d35a7f74",
+  "projectname": "demo",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/pages_administrator/pages_administrator",
+          "pathName": "pages/pages_administrator/pages_administrator",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login_administrator/login_administrator",
+          "pathName": "pages/login_administrator/login_administrator",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/help3/help3",
+          "pathName": "pages/help3/help3",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addpapes_repairer/addpages_repairer",
+          "pathName": "pages/addpapes_repairer/addpages_repairer",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

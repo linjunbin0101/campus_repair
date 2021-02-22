@@ -1,0 +1,18 @@
+<!--pages/change_myinfo_repairer/change_myinfo_repairer.wxml-->
+<!--pages/myinfo_repairer/myinfo_repairer.wxml-->
+<i-notice-bar icon="systemprompt" closable>仅可修改“账号密码”和“联系方式”</i-notice-bar>
+<i-panel>
+  <i-input i-class="i-title" title="信息修改" type="text" mode="wrapped"  disabled/>
+</i-panel>
+<view>
+<form bindsubmit="formSubmit"> 
+<i-panel i-class="i-page">
+  <i-input title="性别：" value="{{list.sex_repairer}}" type="text" mode="wrapped" name="sex_repairer" disabled/>
+  <i-input title="姓名：" value="{{list.name_repairer}}" type="number" mode="wrapped" name="name_repairer" disabled />
+  <i-input title="学号：" value="{{no_repairer}}" type="text" mode="wrapped" name="no_repairer" disabled />
+  <i-input title="修改后的账户密码：" value="{{pass_repairer}}" type="text" mode="wrapped" name="pass_repairer"  maxlength="15" />
+  <i-input title="修改后的联系方式：" value="{{phone_repairer}}" type="text" mode="wrapped" name="phone_repairer"  maxlength="15" />
+</i-panel>
+<button class="btn" formType="submit">确定修改</button>
+</form>
+</view>

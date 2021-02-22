@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail_repairer/detail_repairer",
+    "pages/detail_maintainer/detail_maintainer",
+    "pages/login_repairer/login_repairer",
+    "pages/login_maintainer/login_maintainer",
+    "pages/home_repairer/home_repairer",
+    "pages/home_maintainer/home_maintainer",
+    "pages/addpapes_repairer/addpages_repairer",
+    "pages/myinfo_repairer/myinfo_repairer",
+    "pages/change_myinfo_repairer/change_myinfo_repairer",
+    "pages/link_me/link_me",
+    "pages/help/help",
+    "pages/help2/help2",
+    "pages/help3/help3",
+    "pages/detail_1_repairer/detail_1_repairer",
+    "pages/myinfo_maintainer/myinfo_maintainer",
+    "pages/change_myinfo_maintainer/change_myinfo_maintainer",
+    "pages/detail_1_maintainer/detail_1_maintainer",
+    "pages/detail_detail1_maintainer/detail_detail1_maintainer",
+    "pages/login_administrator/login_administrator",
+    "pages/pages_administrator/pages_administrator"
+
+    ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "培正报修",
+    "navigationBarTextStyle":"black"
+  },
+ "tabBar": {
+  "color": "#000000",
+  "selectedColor": "#d81e06",
+   "list": [{
+     "pagePath": "pages/detail_repairer/detail_repairer",
+     "text": "报修管理",
+     "iconPath": "/images/detail1.png",
+     "selectedIconPath": "/images/detail2.png"
+   },{
+    "pagePath": "pages/home_repairer/home_repairer",
+    "text": "关于我的",
+    "iconPath": "/images/home1.png",
+    "selectedIconPath": "/images/home2.png"
+  }]
+ },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "i-input": "/dist/input",
+    "i-button": "/dist/button",
+    "i-cell-group": "/dist/cell-group",
+    "i-cell": "/dist/cell",
+    "i-icon": "/dist/icon",
+    "i-tabs": "/dist/tabs/index",
+    "i-tab": "/dist/tab/index",
+    "i-panel": "/dist/panel",
+    "i-notice-bar": "/dist/notice-bar",
+    "i-steps": "/dist/steps",
+    "i-step": "/dist/step"
+  }
+}

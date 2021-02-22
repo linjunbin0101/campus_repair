@@ -1,0 +1,38 @@
+<view id='tabs'>
+  <view class='tabs-box'>
+    <block wx:for="{{top}}" wx:key="index">
+      <view class="tabs-item {{currentTabIndex == index ? 'selected' : '' }}" bindtap='onTabsItemTap' data-index='{{index}}'>
+        {{item}}      
+      </view>
+    </block> 
+  </view>
+  <view class='ordert-detail'>
+    <view hidden='{{currentTabIndex != 1}}'>
+    <i-button bindtap="todetail">查看我的维修情况</i-button>
+    <view wx:for="{{list}}" wx:key="list" class="pages" data-index="{{index}}" data-id="{{item.id_pages}}" bindtap="click">
+        <view>
+          <view>第 {{index+1}} 单：</view>
+        <view>申请人：{{item.name_pages}}</view>
+        <view class="grade">紧急程度：{{item.grade_pages}}</view>
+        <view>故障地点：{{item.addr_pages}}</view>
+        <view>问题描述：{{item.detail_pages}}</view>
+        <view class="time">报修时间：{{item.now_pages}}</view>
+      </view>
+      <view><i-button type="primary" size="small" shape="circle" class="btn2">查看详情</i-button></view>
+      </view>
+    </view>
+    <view hidden='{{currentTabIndex != 0}}'>
+<view class="user">
+ <view class="pic"><open-data type="userAvatarUrl"></open-data></view>
+ <view>您好，<open-data class="nime" type="userNickName" lang="zh_CN"></open-data>师傅</view>
+</view>
+<view>
+<button bindtap="b1" class="btn" plain="true">我的信息</button>
+<button bindtap="b2" class="btn" plain="true">信息修改</button>
+<button bindtap="b3"class="btn" plain="true">操作流程</button>
+<button open-type="feedback" class="btn" plain="true">意见反馈</button>
+<button bindtap="b5"class="btn" plain="true">联系我们</button>
+</view>
+    </view>
+  </view>
+</view>

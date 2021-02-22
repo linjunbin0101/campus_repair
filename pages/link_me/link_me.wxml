@@ -1,0 +1,5 @@
+<!--pages/link_me/link_me.wxml-->
+<view class="page">
+<image class="img" mode="aspectFit" show-menu-by-longpress src="/images/link_me.jpg"></image>
+</view>
+<text class="txt">个人微信：iyyulu</text>

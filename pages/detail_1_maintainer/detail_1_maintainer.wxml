@@ -1,0 +1,20 @@
+<view wx:for="{{list}}" wx:key="list" data-id="{{item.id_pages}}" data-name="{{item.name_pages}}" data-phone="{{item.phone_pages}}"  data-now="{{item.now_pages}}" data-addr="{{item.addr_pages}}" data-detail="{{item.detail_pages}}" data-grade="{{item.grade_pages}}"  data-time="{{item.time_pages}}">
+  <form bindsubmit="formSubmit">
+<i-panel>
+<view>
+  <i-input i-class="i-title" title="维修单详细" type="text"  disabled />
+  <i-input title="申请人：" value="{{item.name_pages}}" type="text" mode="wrapped" name="name_pages"  disabled />
+  <i-input title="报修单号：" value="{{item.id_pages}}" type="text" mode="wrapped" name="id_pages"  disabled />
+  <i-input title="紧急程度：" value="{{item.grade_pages}}" type="number" mode="wrapped" name="grade_pages"  disabled />
+  <i-input title="故障地点：" value="{{item.addr_pages}}" type="text" mode="wrapped" name="addr_pages"  disabled />
+  <i-input title="问题描述：" value="{{item.detail_pages}}" type="text" mode="wrapped" name="detail_pages"  disabled />
+  <i-input title="联系方式：" value="{{item.phone_pages}}" type="text" mode="wrapped" name="phone_pages"  disabled />
+  <i-input title="报修时间：" value="{{item.now_pages}}" type="text" mode="wrapped" name="now_pages"  disabled />
+  <i-input wx:if="{{0}}" title="接单时间：" value="{{add_maintainer}}" type="text" mode="wrapped" name="add_maintainer"  disabled />
+  <i-input title="预计维修时间：" value="{{item.time_pages}}" type="text" mode="wrapped" name="time_pages"  disabled />
+  </view>
+  <button class="btn" form-type="submit">确认接单</button>
+</i-panel>
+</form>
+</view>
+

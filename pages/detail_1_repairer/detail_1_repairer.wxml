@@ -1,0 +1,17 @@
+<view wx:for="{{list}}" wx:key="list">
+  <form bindsubmit="formsubmit">
+<i-panel>
+  <i-input i-class="i-title" title="报修单详细" type="text"  disabled />
+  <view class="pages">
+  <i-input title="申请人：" value="{{item.name_pages}}" type="text" mode="wrapped" name="name_repairer"  disabled />
+  <i-input title="报修单号：" value="{{item.id_pages}}" type="text" mode="wrapped" name="id_repairer"  disabled />
+  <i-input title="紧急程度：" value="{{item.grade_pages}}" type="number" mode="wrapped" name="grade_repairer"  disabled />
+  <i-input title="故障地点：" value="{{item.addr_pages}}" type="text" mode="wrapped" name="addr_repairer"  disabled />
+  <i-input title="问题描述：" value="{{item.detail_pages}}" type="text" mode="wrapped" name="detail_repairer"  disabled />
+  <i-input title="联系方式：" value="{{item.phone_pages}}" type="text" mode="wrapped" name="phone_repairer"  disabled />
+  <i-input title="报修时间：" value="{{item.now_pages}}" type="text" mode="wrapped" name="now_repairer"  disabled />
+  </view>
+  <button class="btn" form-type="submit">删除报修</button>
+</i-panel>
+</form>
+</view>

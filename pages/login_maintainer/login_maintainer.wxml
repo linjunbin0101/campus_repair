@@ -1,0 +1,18 @@
+<!--pages/login_maintainer/login_maintainer.wxml-->
+<image bindtap="detail" class="detail" src='../../images/detail.png'></image>
+<view>
+  <form bindsubmit="login">
+<view class="image">
+  <image src='../../images/maintainer.png'></image>
+</view>
+<i-panel class="input">
+    <i-input title="工号" value="{{no_maintainer}}" type="number" mode="wrapped" name="no_maintainer" autofocus placeholder="请输入工号" maxlength="15" />
+    <i-input title="密码" value="{{pass_maintainer}}" type="password" mode="wrapped" name="pass_maintainer" placeholder="请输入密码" maxlength="15" />
+    <i-input wx:if="{{0}}" title="姓名" value="{{name_maintainer}}" type="txt" mode="wrapped" name="name_maintainer" placeholder="请输入姓名" maxlength="15" />
+    <i-input wx:if="{{0}}" title="手机" value="{{phone_maintainer}}" type="txt" mode="wrapped" name="phone_maintainer" placeholder="请输入手机" maxlength="15" />
+</i-panel>
+<button class="btn" form-type="submit">登录</button>
+</form>
+</view>
+
+

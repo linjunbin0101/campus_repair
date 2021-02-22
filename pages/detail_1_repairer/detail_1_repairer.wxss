@@ -1,0 +1,15 @@
+.pages{
+  padding: 30px;
+  line-height: 30px;
+}
+.i-title{
+  font-size: xx-large !important;
+  padding: 0 27% !important;
+  margin-top: 30px !important;
+}
+.btn{
+  width: 40%;
+  background: -webkit-linear-gradient(left,pink,lightblue,skyblue);
+  color: white;
+  border-radius: 98rpx;
+}

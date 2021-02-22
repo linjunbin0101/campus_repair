@@ -1,0 +1,15 @@
+<!--pages/login_repairer/login_repairer.wxml-->
+<image bindtap="detail" class="detail" src='../../images/detail.png'></image>
+<view>
+  <form bindsubmit="login">
+<view class="image">
+  <image src='../../images/administrator.png'></image>
+</view>
+<i-panel class="input">
+    <i-input title="帐号" value="{{no_administrator}}" type="text" mode="wrapped" name="no_administrator" autofocus placeholder="请输入帐号" maxlength="15" />
+    <i-input title="密码" value="{{pass_administrator}}" type="password" mode="wrapped" name="pass_administrator" placeholder="请输入密码" maxlength="15" />
+</i-panel>
+<button class="btn" form-type="submit">登录</button>
+</form>
+</view>
+

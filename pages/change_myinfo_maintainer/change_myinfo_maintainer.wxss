@@ -1,0 +1,16 @@
+/* pages/change_myinfo_repairer/change_myinfo_repairer.wxss */
+.i-title{
+  font-size: 25px !important;
+  margin-top: 10% !important;
+  padding: 0px 100px !important;
+}
+.i-page{
+  margin-top: 5% !important;
+}
+.btn{
+  margin-top: 40px;
+  width: 40%;
+  background: -webkit-linear-gradient(left,pink,lightblue,skyblue);
+  color: white;
+  border-radius: 98rpx;
+}

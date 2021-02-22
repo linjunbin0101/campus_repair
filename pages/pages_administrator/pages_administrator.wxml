@@ -1,0 +1,85 @@
+<view id='tabs'>
+  <view class='tabs-box'>
+    <block wx:for="{{top}}" wx:key="index">
+      <view class="tabs-item {{currentTabIndex == index ? 'selected' : '' }}" bindtap='onTabsItemTap' data-index='{{index}}'>
+        {{item}}      
+      </view>
+    </block> 
+  </view>
+  <view class='ordert-detail'>
+    <view hidden='{{currentTabIndex != 0}}'>
+      <form bindsubmit="formsubmit">
+      <view wx:for="{{list}}" wx:key="list" class="v1">
+          <i-panel>
+            <i-input title="序号" value="{{index+1}}" name="index+1" maxlength="15" disabled />
+            <i-input title="姓名" value="{{item.name_repairer}}" name="name_repairer" maxlength="15" disabled />
+            <i-input title="学号" value="{{item.no_repairer}}" name="no_repairer" maxlength="15" disabled />
+            <i-input title="密码" value="{{item.pass_repairer}}" name="pass_repairer" maxlength="15" disabled />
+          </i-panel>
+          <button class="btn" form-type="submit">删除名单</button>
+      </view>
+    </form>
+    </view>
+    <view hidden='{{currentTabIndex != 1}}'>
+      <view wx:for="{{list2}}" wx:key="list2" class="v1">
+        <form bindsubmit="formsubmit">
+          <i-panel>
+            <i-input title="序号" value="{{index+1}}" name="index+1" maxlength="15" disabled />
+            <i-input title="姓名" value="{{item.name_maintainer}}" name="name_maintainer" maxlength="15" disabled />
+            <i-input title="工号" value="{{item.no_maintainer}}" name="no_maintainer" maxlength="15" disabled />
+            <i-input title="密码" value="{{item.pass_maintainer}}" name="pass_maintainer" maxlength="15" disabled />
+          </i-panel>
+          <button class="btn" form-type="submit">删除名单</button>
+      </form>
+      </view>
+    </view>
+    <view hidden='{{currentTabIndex != 2}}'>
+      <view wx:for="{{list3}}" wx:key="list3" class="v1">
+          <i-panel>
+            <i-input title="序号" value="{{index+1}}" name="index+1" maxlength="15" disabled />
+            <i-input title="报修人" value="{{item.name_pages}}" name="name_pages" maxlength="15" disabled />
+            <i-input title="报修人电话" value="{{item.phone_pages}}" name="phone_pages" maxlength="15" disabled />
+            <i-input title="故障的地点" value="{{item.addr_pages}}" name="addr_pages" maxlength="15" disabled />
+            <i-input title="故障的详情" value="{{item.detail_pages}}" name="detail_pages" maxlength="15" disabled />
+            <i-input title="紧急的程度" value="{{item.grade_pages}}" name="grade_pages" maxlength="15" disabled />
+            <i-input title="报修的时间" value="{{item.now_pages}}" name="now_pages" maxlength="30" disabled />
+            <i-input title="期待能维修时间" value="{{item.time_pages}}" name="time_pages" maxlength="30" disabled />
+          </i-panel>
+          <!-- <button class="btn" form-type="submit">重置密码</button> -->
+      </view>
+    </view>
+    <view hidden='{{currentTabIndex != 3}}'>
+      <view wx:for="{{list4}}" wx:key="list4" class="v1">
+          <i-panel>
+            <i-input title="序号" value="{{index+1}}" name="index+1" maxlength="15" disabled />
+            <i-input title="报修人" value="{{item.name_pages}}" name="name_pages" maxlength="15" disabled />
+            <i-input title="报修人电话" value="{{item.phone_pages}}" name="phone_pages" maxlength="15" disabled />
+            <i-input title="维修师傅" value="{{item.name_maintainer}}" name="name_maintainer" maxlength="15" disabled />
+            <i-input title="维修师傅电话" value="{{item.phone_maintainer}}" name="phone_maintainer" maxlength="15" disabled />
+            <i-input title="故障的地点" value="{{item.addr_pages}}" name="addr_pages" maxlength="15" disabled />
+            <i-input title="故障的详情" value="{{item.detail_pages}}" name="detail_pages" maxlength="15" disabled />
+            <i-input title="报修的时间" value="{{item.now_pages}}" name="now_pages" maxlength="30" disabled />
+            <i-input title="接单的时间" value="{{item.add_maintainer}}" name="add_maintainer" maxlength="30" disabled />
+          </i-panel>
+          <!-- <button class="btn" form-type="submit">重置密码</button> -->
+      </view>
+    </view>
+    <view hidden='{{currentTabIndex != 4}}'>
+      <view wx:for="{{list5}}" wx:key="list5" class="v1">
+          <i-panel>
+            <i-input title="序号" value="{{index+1}}" name="index+1" maxlength="15" disabled />
+            <i-input title="报修人" value="{{item.name_repairer}}" name="name_repairer" maxlength="15" disabled />
+            <i-input title="报修人电话" value="{{item.phone_repairer}}" name="phone_repairer" maxlength="15" disabled />
+            <i-input title="维修师傅" value="{{item.name_maintainer}}" name="name_maintainer" maxlength="15" disabled />
+            <i-input title="维修师傅电话" value="{{item.phone_maintainer}}" name="phone_maintainer" maxlength="15" disabled />
+            <i-input title="故障的地点" value="{{item.addr_pages}}" name="addr_pages" maxlength="15" disabled />
+            <i-input title="故障的详情" value="{{item.detail_pages}}" name="detail_pages" maxlength="15" disabled />
+            <i-input title="报修的时间" value="{{item.now_pages}}" name="now_pages" maxlength="30" disabled />
+            <i-input title="接单的时间" value="{{item.add_maintainer}}" name="add_maintainer" maxlength="30" disabled />
+            <i-input title="完成的时间" value="{{item.finish_maintainer}}" name="finish_maintainer" maxlength="30" disabled />
+          </i-panel>
+          <!-- <button class="btn" form-type="submit">重置密码</button> -->
+      </view>
+    </view>
+  </view>
+</view>
