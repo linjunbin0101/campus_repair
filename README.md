@@ -9,4 +9,4 @@ test account:
 
 3.administrator(account:root;password:123456)
 
-## 年久失修，服务器过期了，代码写的基本只能运行，刚学的原生开发当学习语法了
+## 年久失修，服务器过期了，代码写的基本只能运行，就当学习语法了，增删改查php
